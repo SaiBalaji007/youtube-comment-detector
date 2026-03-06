@@ -45,37 +45,47 @@ The system also includes an **AI assistant powered by Google Gemini** and a **Yo
 ## Project Structure
 
 
-youtube-hate-and-hope-comment-detector
+youtube-comment-detector
 │
 ├── app.py
 ├── database.py
 ├── requirements.txt
+├── README.md
 ├── .env.example
+├── .gitignore
+│
+├── instance
+│   └── database.db
 │
 ├── models
-│ └── hope_hate_model.pkl
+│   └── hope_hate_model.pkl
 │
 ├── services
-│ ├── gemini_chat.py
-│ ├── hate_classifier.py
-│ ├── youtube.py
-│ └── youtube_tracker.py
+│   ├── gemini_chat.py
+│   ├── hate_classifier.py
+│   ├── youtube.py
+│   └── youtube_tracker.py
 │
 ├── static
-│ ├── css
-│ ├── js
-│ └── images
+│   ├── css
+│   │   └── style.css
+│   │
+│   ├── js
+│   │   └── script.js
+│   │
+│   └── images
+│       └── logo.png
 │
 └── templates
-├── base.html
-├── home.html
-├── login.html
-├── signup.html
-├── predict.html
-├── dashboard.html
-├── chatbot.html
-├── youtube_tracker.html
-└── about.html
+    ├── base.html
+    ├── home.html
+    ├── login.html
+    ├── signup.html
+    ├── predict.html
+    ├── dashboard.html
+    ├── chatbot.html
+    ├── youtube_tracker.html
+    └── about.html
 
 
 ---
