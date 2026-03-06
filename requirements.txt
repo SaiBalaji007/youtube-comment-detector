@@ -1,0 +1,16 @@
+Flask
+Flask-Bcrypt
+transformers
+torch
+pandas
+google-api-python-client>=2.84.0
+google-genai
+langdetect
+accelerate
+matplotlib
+datasets
+python-dotenv
+scikit-learn
+pydantic
+pytz
+gunicorn
