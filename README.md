@@ -45,48 +45,37 @@ The system also includes an **AI assistant powered by Google Gemini** and a **Yo
 ## Project Structure
 
 
-youtube-comment-detector
-│
-├── app.py
-├── database.py
-├── requirements.txt
-├── README.md
-├── .env.example
-├── .gitignore
-│
-├── instance
-│   └── database.db
-│
-├── models
-│   └── hope_hate_model.pkl
-│
-├── services
-│   ├── gemini_chat.py
-│   ├── hate_classifier.py
-│   ├── youtube.py
-│   └── youtube_tracker.py
-│
-├── static
-│   ├── css
-│   │   └── style.css
-│   │
-│   ├── js
-│   │   └── script.js
-│   │
-│   └── images
-│       └── logo.png
-│
-└── templates
-    ├── base.html
-    ├── home.html
-    ├── login.html
-    ├── signup.html
-    ├── predict.html
-    ├── dashboard.html
-    ├── chatbot.html
-    ├── youtube_tracker.html
-    └── about.html
+## Project Structure
 
+- **app.py** – Main Flask application  
+- **database.py** – Database setup and helper functions  
+- **requirements.txt** – Python dependencies  
+- **.env.example** – Environment variables example  
+
+### models
+- `hope_hate_model.pkl` – Pretrained sentiment model  
+
+### services
+- `gemini_chat.py` – Gemini AI chatbot logic  
+- `hate_classifier.py` – Comment sentiment classifier  
+- `youtube.py` – YouTube API interaction  
+- `youtube_tracker.py` – Video statistics tracking  
+
+### static
+- **css/** – Stylesheets  
+- **js/** – JavaScript files  
+- **images/** – Images and assets  
+
+### templates
+- `base.html`
+- `home.html`
+- `login.html`
+- `signup.html`
+- `predict.html`
+- `dashboard.html`
+- `chatbot.html`
+- `youtube_tracker.html`
+- `about.html`
 
 ---
 
