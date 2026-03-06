@@ -76,49 +76,26 @@ The system also includes an **AI assistant powered by Google Gemini** and a **Yo
 - `chatbot.html`
 - `youtube_tracker.html`
 - `about.html`
+Installation & Setup
+Clone the repository:
 
+git clone https://github.com/BhavishyaKatariya/youtube-sentiment-ai-assistant.git # Update with your repo
+cd youtube-sentiment-ai-assistant # Update with your repo name
+Install Dependencies:
+
+pip install -r requirements.txt
+Set Environment Variables: Create a .env file in the root directory of your project.
+
+GEMINI_API_KEY="your_gemini_api_key_here"
+YOUTUBE_API_KEY="your_youtube_data_api_key_here"
+SESSION_SECRET="a_strong_random_secret_key"
+GEMINI_API_KEY: Obtain your API key from Google AI Studio.
+YOUTUBE_API_KEY: Obtain your API key from the Google Cloud Console. Ensure the "YouTube Data API v3" is enabled for your project.
+SESSION_SECRET: A strong, random secret key for Flask session management. You can generate one using python -c 'import os; print(os.urandom(24))'.
+For deployment (e.g., on Render), set these variables directly in your hosting platform's environment settings.
+Run the Application:
+
+python app.py
+The application will be available in your browser at http://0.0.0.0:5005.
 ---
 
-## Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/SaiBalaji007/youtube-hate-and-hope-comment-detector.git
-cd youtube-hate-and-hope-comment-detector
-2. Install dependencies
-pip install -r requirements.txt
-3. Configure environment variables
-
-Create a .env file and add:
-
-GEMINI_API_KEY=your_gemini_api_key
-YOUTUBE_API_KEY=your_youtube_api_key
-SESSION_SECRET=your_secret_key
-4. Run the application
-python app.py
-
-The app will run at:
-
-http://localhost:5005
-Machine Learning Model
-
-The system uses a pre-trained sentiment classification model (hope_hate_model.pkl) to analyze YouTube comments and classify them into:
-
-Hope → Positive sentiment
-
-Hate → Negative sentiment
-
-Security
-
-Password hashing using Werkzeug
-
-Secure session-based authentication
-
-Protected routes for logged-in users
-
-API keys managed through environment variables
-
-License
-
-This project is built for educational and learning purposes.
