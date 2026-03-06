@@ -76,26 +76,46 @@ The system also includes an **AI assistant powered by Google Gemini** and a **Yo
 - `chatbot.html`
 - `youtube_tracker.html`
 - `about.html`
-Installation & Setup
+
+## Installation & Setup
+
 Clone the repository:
 
-git clone https://github.com/BhavishyaKatariya/youtube-sentiment-ai-assistant.git # Update with your repo
-cd youtube-sentiment-ai-assistant # Update with your repo name
-Install Dependencies:
+git clone https://github.com/SaiBalaji007/youtube-comment-detector.git  
+cd youtube-comment-detector
+
+## Install Dependencies
 
 pip install -r requirements.txt
-Set Environment Variables: Create a .env file in the root directory of your project.
 
-GEMINI_API_KEY="your_gemini_api_key_here"
-YOUTUBE_API_KEY="your_youtube_data_api_key_here"
+## Set Environment Variables
+
+Create a `.env` file in the root directory of your project.
+
+GEMINI_API_KEY="your_gemini_api_key_here"  
+YOUTUBE_API_KEY="your_youtube_data_api_key_here"  
 SESSION_SECRET="a_strong_random_secret_key"
+
 GEMINI_API_KEY: Obtain your API key from Google AI Studio.
-YOUTUBE_API_KEY: Obtain your API key from the Google Cloud Console. Ensure the "YouTube Data API v3" is enabled for your project.
-SESSION_SECRET: A strong, random secret key for Flask session management. You can generate one using python -c 'import os; print(os.urandom(24))'.
-For deployment (e.g., on Render), set these variables directly in your hosting platform's environment settings.
-Run the Application:
+
+YOUTUBE_API_KEY: Obtain your API key from the Google Cloud Console. Ensure the **YouTube Data API v3** is enabled for your project.
+
+SESSION_SECRET: A strong, random secret key for Flask session management. You can generate one using:
+
+python -c "import os; print(os.urandom(24))"
+
+For deployment (for example on Render), set these variables directly in your hosting platform's environment settings.
+
+## Run the Application
 
 python app.py
-The application will be available in your browser at http://0.0.0.0:5005.
----
 
+The application will be available in your browser at:
+
+http://0.0.0.0:5005 
+
+## License
+
+This project is created for **educational and learning purposes**.
+
+Built using **Flask, Machine Learning, Google Gemini AI, and the YouTube Data API**.
